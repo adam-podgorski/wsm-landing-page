@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://westernstrategicminerals.com/sitemap.xml

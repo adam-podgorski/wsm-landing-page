@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Western Strategic Minerals AB (WSM) is a Baltic junior mining company acquiring, consolidating and reactivating underexploited critical-mineral assets across Sweden, Poland and Finland.">
+    <meta property="og:title" content="WSM — Western Strategic Minerals AB">
+    <meta property="og:description" content="Acquiring and restarting underexploited mines across the Baltic. Nickel, cobalt, vanadium, titanium, molybdenum, tungsten and PGMs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://westernstrategicminerals.com">
+    <title>WSM — Western Strategic Minerals AB</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' rx='4' fill='%231a2332'/><text x='100' y='125' font-family='Georgia,serif' font-size='72' font-weight='700' fill='%23c2856a' text-anchor='middle' letter-spacing='-2'>W</text></svg>">
+    <link rel="canonical" href="https://westernstrategicminerals.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+    --ink: #1a2332;
+    --copper: #c2856a;
+    --copper-light: #d4a088;
+    --stone: #f2eeea;
+    --slate-deep: #2c3a4d;
+    --slate-80: #3d4a5c;
+    --slate-60: #6b7a8d;
+    --slate-40: #94a0ad;
+    --granite: #e2ddd7;
+    --hairline: #d5cfc7;
+
+    --font-display: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+    --font-editorial: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-label: Georgia, 'Times New Roman', serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { background: var(--stone); scroll-behavior: smooth; }
+body {
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--slate-80);
+    background: var(--stone);
+    -webkit-font-smoothing: antialiased;
+}
+
+.container { max-width: 1080px; margin: 0 auto; padding: 0 2rem; }
+
+/* NAVIGATION */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(242, 238, 234, 0.96);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--hairline);
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+}
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    color: var(--ink);
+}
+.nav-logo .nav-mark {
+    width: 38px;
+    height: 38px;
+    background: var(--ink);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-logo .nav-mark span {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    color: var(--copper);
+    font-weight: 400;
+    line-height: 1;
+}
+.nav-logo .nav-wordmark {
+    font-family: var(--font-label);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.72rem;
+    color: var(--ink);
+    line-height: 1.2;
+}
+.nav-logo .nav-wordmark .nav-sub {
+    display: block;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    font-size: 0.6rem;
+    color: var(--slate-60);
+    margin-top: 1px;
+}
+.nav-links {
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
+}
+.nav-links a {
+    font-family: var(--font-label);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.7rem;
+    color: var(--slate-60);
+    text-decoration: none;
+    transition: color 0.15s;
+}
+.nav-links a:hover { color: var(--copper); }
+.nav-cta {
+    font-family: var(--font-label);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.7rem;
+    padding: 0.55rem 1.1rem;
+    background: var(--ink);
+    color: var(--stone);
+    text-decoration: none;
+    border: 1px solid var(--ink);
+    transition: all 0.15s;
+}
+.nav-cta:hover {
+    background: var(--copper);
+    border-color: var(--copper);
+    color: var(--ink);
+}
+@media (max-width: 720px) {
+    .nav-links { display: none; }
+}
+
+/* SECTION SHARED */
+section { padding: 6rem 0; }
+.section-label {
+    display: block;
+    font-family: var(--font-label);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.72rem;
+    color: var(--slate-40);
+    margin-bottom: 0.6rem;
+}
+h1, h2, h3 {
+    font-family: var(--font-display);
+    color: var(--ink);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+}
+h1 em, h2 em, h3 em {
+    font-family: var(--font-editorial);
+    font-style: italic;
+    color: var(--copper);
+    font-weight: 600;
+}
+hr.rule {
+    height: 1px;
+    background: var(--copper);
+    border: 0;
+    width: 60px;
+    margin: 0 0 1.8rem 0;
+}
+
+/* HERO */
+.hero {
+    padding: 8rem 0 7rem 0;
+    border-bottom: 1px solid var(--hairline);
+}
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+.hero h1 {
+    font-size: 3.2rem;
+    line-height: 1.08;
+    margin-bottom: 1.6rem;
+}
+.hero .lead {
+    font-family: var(--font-editorial);
+    font-style: italic;
+    font-size: 1.35rem;
+    color: var(--slate-60);
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+.hero p.body {
+    font-size: 1rem;
+    color: var(--slate-80);
+    max-width: 540px;
+    margin-bottom: 2rem;
+}
+.hero-cta {
+    display: inline-block;
+    font-family: var(--font-label);
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.75rem;
+    padding: 0.85rem 1.6rem;
+    background: var(--ink);
+    color: var(--stone);
+    text-decoration: none;
+    transition: all 0.15s;
+    border: 1px solid var(--ink);
+}
+.hero-cta:hover {
+    background: var(--copper);
+    border-color: var(--copper);
+    color: var(--ink);
+}
+.hero-cta + .hero-cta {
+    margin-left: 0.8rem;
+    background: transparent;
+    color: var(--ink);
+}
+.hero-cta + .hero-cta:hover {
+    background: var(--ink);
+    color: var(--stone);
+}
+.hero-mark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-mark svg {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+}
+@media (max-width: 880px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .hero h1 { font-size: 2.4rem; }
+    .hero-mark { order: -1; }
+    .hero-mark svg { max-width: 220px; }
+}
+
+/* WHO WE ARE */
+.who-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 5rem;
+    align-items: start;
+}
+.who h2 {
+    font-size: 2.2rem;
+    line-height: 1.15;
+    margin-bottom: 1.4rem;
+}
+.who p {
+    font-size: 1rem;
+    color: var(--slate-80);
+    margin-bottom: 1rem;
+}
+.who p strong { color: var(--ink); font-weight: 600; }
+.who-pull {
+    border-left: 2px solid var(--copper);
+    padding: 0.4rem 0 0.4rem 1.4rem;
+    font-family: var(--font-editorial);
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--ink);
+    margin: 1.5rem 0;
+}
+@media (max-width: 880px) { .who-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
+
+/* WHAT WE DO */
+.what {
+    background: var(--ink);
+    color: var(--stone);
+    border-top: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--hairline);
+}
+.what .section-label { color: var(--copper); }
+.what h2 { color: var(--stone); font-size: 2.2rem; margin-bottom: 0.8rem; }
+.what h2 em { color: var(--copper); }
+.what .sub {
+    color: rgba(242, 238, 234, 0.7);
+    font-size: 1rem;
+    max-width: 720px;
+    margin-bottom: 3rem;
+}
+.what hr.rule { background: var(--copper); width: 60px; }
+.tracks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: 1px solid rgba(194, 133, 106, 0.3);
+}
+.track {
+    padding: 2.4rem 1.8rem 2.4rem 0;
+    border-right: 1px solid rgba(194, 133, 106, 0.25);
+}
+.track:last-child { border-right: 0; padding-right: 0; }
+.track:not(:first-child) { padding-left: 1.8rem; }
+.track .track-num {
+    font-family: var(--font-editorial);
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--copper);
+    margin-bottom: 0.6rem;
+}
+.track h3 {
+    color: var(--stone);
+    font-size: 1.45rem;
+    margin-bottom: 0.4rem;
+    line-height: 1.2;
+}
+.track .track-tag {
+    font-family: var(--font-label);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.66rem;
+    color: var(--copper);
+    margin-bottom: 0.9rem;
+    display: block;
+}
+.track p {
+    color: rgba(242, 238, 234, 0.8);
+    font-size: 0.94rem;
+    line-height: 1.55;
+}
+@media (max-width: 880px) {
+    .tracks { grid-template-columns: 1fr; }
+    .track { border-right: 0; border-bottom: 1px solid rgba(194, 133, 106, 0.25); padding: 2rem 0; }
+    .track:not(:first-child) { padding-left: 0; }
+    .track:last-child { border-bottom: 0; }
+}
+
+/* PLATFORM SECTION */
+.platform {
+    background: #141c28;
+    color: var(--stone);
+    border-bottom: 1px solid var(--hairline);
+    padding: 6rem 0;
+    overflow: hidden;
+}
+.platform .section-label { color: var(--copper); }
+.platform h2 { color: var(--stone); font-size: 2.2rem; margin-bottom: 0.8rem; }
+.platform h2 em { color: var(--copper); }
+.platform .sub {
+    color: rgba(242, 238, 234, 0.7);
+    font-size: 1rem;
+    max-width: 680px;
+    margin-bottom: 2.5rem;
+}
+.platform hr.rule { background: var(--copper); }
+.platform-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 3rem;
+    align-items: center;
+}
+.platform-features {
+    list-style: none;
+}
+.platform-features li {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(194, 133, 106, 0.15);
+    display: flex;
+    gap: 0.8rem;
+    align-items: start;
+}
+.platform-features li:first-child { padding-top: 0; }
+.platform-features li:last-child { border-bottom: 0; }
+.platform-features .feat-num {
+    font-family: var(--font-editorial);
+    font-style: italic;
+    color: var(--copper);
+    font-size: 1rem;
+    flex-shrink: 0;
+    width: 1.5rem;
+}
+.platform-features .feat-text {
+    font-size: 0.92rem;
+    color: rgba(242, 238, 234, 0.8);
+    line-height: 1.5;
+}
+.platform-features .feat-text strong {
+    color: var(--stone);
+    font-weight: 600;
+}
+.platform-screenshot {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgba(194, 133, 106, 0.2);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(194, 133, 106, 0.1);
+}
+.platform-screenshot img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.platform-mock {
+    width: 100%;
+    aspect-ratio: 16/11;
+    background: #0f1922;
+    border-radius: 6px;
+    border: 1px solid rgba(194, 133, 106, 0.2);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+}
+.platform-mock .mock-bar {
+    height: 32px;
+    background: #1a2636;
+    border-bottom: 1px solid rgba(194, 133, 106, 0.15);
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    gap: 6px;
+}
+.platform-mock .mock-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(194, 133, 106, 0.3);
+}
+.platform-mock .mock-body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: calc(100% - 32px);
+}
+.platform-mock .mock-map {
+    position: relative;
+    overflow: hidden;
+    background: #0d1520;
+}
+.platform-mock .mock-panel {
+    background: #1a2636;
+    border-left: 1px solid rgba(194, 133, 106, 0.15);
+    padding: 16px;
+}
+.platform-mock .mock-panel-title {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    color: var(--stone);
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.platform-mock .mock-panel-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    font-size: 0.55rem;
+    font-family: var(--font-body);
+}
+.platform-mock .mock-panel-row .label { color: rgba(242,238,234,0.5); }
+.platform-mock .mock-panel-row .value { color: rgba(242,238,234,0.8); }
+.platform-mock .mock-tag {
+    display: inline-block;
+    font-size: 0.5rem;
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin: 2px;
+    font-family: var(--font-body);
+    font-weight: 600;
+}
+.platform-mock .mock-tag.green { background: rgba(74,222,128,0.2); color: #4ade80; }
+.platform-mock .mock-tag.orange { background: rgba(251,191,36,0.2); color: #fbbf24; }
+.platform-mock .mock-tag.red { background: rgba(248,113,113,0.2); color: #f87171; }
+.platform-caption {
+    margin-top: 1rem;
+    font-family: var(--font-editorial);
+    font-style: italic;
+    font-size: 0.85rem;
+    color: rgba(242, 238, 234, 0.5);
+    text-align: center;
+}
+@media (max-width: 880px) {
+    .platform-grid { grid-template-columns: 1fr; }
+    .platform-grid > :last-child { order: -1; }
+}
+
+/* PORTFOLIO / MINERALS */
+.portfolio .section-label { text-align: left; }
+.portfolio .heading-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 2.4rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.portfolio h2 { font-size: 2.2rem; line-height: 1.15; max-width: 600px; }
+.portfolio .heading-aside {
+    font-family: var(--font-editorial);
+    font-style: italic;
+    color: var(--slate-60);
+    max-width: 380px;
+    font-size: 1rem;
+    line-height: 1.55;
+}
+.mineral-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--hairline);
+}
+.mineral-grid.row-2 {
+    border-top: 0;
+}
+.mineral {
+    padding: 2.2rem 1.4rem;
+    border-right: 1px solid var(--hairline);
+    text-align: left;
+}
+.mineral:last-child { border-right: 0; }
+.mineral .symbol {
+    font-family: var(--font-display);
+    font-size: 2.8rem;
+    color: var(--ink);
+    line-height: 1;
+    margin-bottom: 0.3rem;
+}
+.mineral .symbol em {
+    font-family: var(--font-editorial);
+    font-style: italic;
+    color: var(--copper);
+}
+.mineral .name {
+    font-family: var(--font-label);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.7rem;
+    color: var(--slate-40);
+    margin-bottom: 0.6rem;
+}
+.mineral .category {
+    font-family: var(--font-label);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.58rem;
+    padding: 0.2rem 0.45rem;
+    display: inline-block;
+    margin-bottom: 0.6rem;
+}
+.mineral .category.minor { border: 1px solid var(--copper); color: var(--copper); }
+.mineral .category.battery { border: 1px solid #6b8f71; color: #6b8f71; }
+.mineral .category.pgm { border: 1px solid #8b7db8; color: #8b7db8; }
+.mineral .category.critical { border: 1px solid #b8945c; color: #b8945c; }
+.mineral .desc {
+    font-size: 0.84rem;
+    color: var(--slate-80);
+    line-height: 1.5;
+}
+@media (max-width: 880px) {
+    .mineral-grid { grid-template-columns: repeat(2, 1fr); }
+    .mineral { border-bottom: 1px solid var(--hairline); }
+    .mineral:nth-child(2n) { border-right: 0; }
+    .mineral:nth-last-child(-n+2) { border-bottom: 0; }
+}
+@media (max-width: 540px) {
+    .mineral-grid { grid-template-columns: 1fr; }
+    .mineral { border-right: 0; border-bottom: 1px solid var(--hairline); }
+    .mineral:last-child { border-bottom: 0; }
+}
+
+/* ASSET REGIONS */
+.regions {
+    background: var(--stone);
+    border-bottom: 1px solid var(--hairline);
+}
+.regions h2 { font-size: 2.2rem; margin-bottom: 0.6rem; }
+.regions .lead-sub {
+    font-family: var(--font-editorial);
+    font-style: italic;
+    color: var(--slate-60);
+    max-width: 640px;
+    margin-bottom: 2.5rem;
+    font-size: 1.05rem;
+}
+.region-list {
+    list-style: none;
+    border-top: 1px solid var(--hairline);
+}
+.region-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 1.4rem;
+    padding: 1.7rem 0;
+    border-bottom: 1px solid var(--hairline);
+    align-items: start;
+}
+.region-item .region-code {
+    font-family: var(--font-editorial);
+    font-style: italic;
+    color: var(--copper);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+}
+.region-item h4 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    color: var(--ink);
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+    letter-spacing: -0.005em;
+}
+.region-item p {
+    color: var(--slate-80);
+    font-size: 0.96rem;
+    line-height: 1.55;
+}
+.region-item .commodity-tags {
+    margin-top: 0.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+}
+.region-item .commodity-tags span {
+    font-family: var(--font-label);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.56rem;
+    padding: 0.2rem 0.45rem;
+    border: 1px solid var(--hairline);
+    color: var(--slate-60);
+    background: rgba(194, 133, 106, 0.05);
+}
+
+/* DIFFERENTIATORS */
+.differentiators {
+    background: var(--stone);
+    border-bottom: 1px solid var(--hairline);
+}
+.differentiators h2 { font-size: 2.2rem; margin-bottom: 0.6rem; }
+.differentiators .lead-sub {
+    font-family: var(--font-editorial);
+    font-style: italic;
+    color: var(--slate-60);
+    max-width: 640px;
+    margin-bottom: 2.5rem;
+    font-size: 1.05rem;
+}
+.diff-list {
+    list-style: none;
+    counter-reset: diff;
+    border-top: 1px solid var(--hairline);
+}
+.diff-list li {
+    counter-increment: diff;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 1.4rem;
+    padding: 1.7rem 0;
+    border-bottom: 1px solid var(--hairline);
+    align-items: start;
+}
+.diff-list li::before {
+    content: counter(diff, upper-roman) ".";
+    font-family: var(--font-editorial);
+    font-style: italic;
+    color: var(--copper);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+}
+.diff-list li h4 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    color: var(--ink);
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+    letter-spacing: -0.005em;
+}
+.diff-list li p {
+    color: var(--slate-80);
+    font-size: 0.96rem;
+    line-height: 1.55;
+}
+
+/* CRMA CONTEXT */
+.context {
+    background: var(--slate-deep);
+    color: var(--stone);
+    border-bottom: 1px solid var(--hairline);
+}
+.context .section-label { color: var(--copper); }
+.context h2 { color: var(--stone); font-size: 2.2rem; margin-bottom: 1.2rem; }
+.context h2 em { color: var(--copper); }
+.context p {
+    color: rgba(242, 238, 234, 0.85);
+    max-width: 760px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.context p strong { color: var(--stone); font-weight: 600; }
+.context hr.rule { background: var(--copper); }
+
+/* TEAM */
+.team {
+    border-bottom: 1px solid var(--hairline);
+}
+.team h2 { font-size: 2.2rem; margin-bottom: 0.6rem; }
+.team .lead-sub {
+    font-family: var(--font-editorial);
+    font-style: italic;
+    color: var(--slate-60);
+    max-width: 640px;
+    margin-bottom: 2.5rem;
+    font-size: 1.05rem;
+}
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--hairline);
+}
+.team-member {
+    padding: 2.2rem 1.6rem;
+    border-right: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--hairline);
+}
+.team-member:nth-child(3n) { border-right: 0; }
+.team-member .member-initials {
+    width: 52px;
+    height: 52px;
+    background: var(--ink);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-editorial);
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--copper);
+    margin-bottom: 1rem;
+}
+.team-member .member-name {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    color: var(--ink);
+    margin-bottom: 0.15rem;
+}
+.team-member .member-title {
+    font-family: var(--font-label);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.66rem;
+    color: var(--copper);
+    margin-bottom: 0.7rem;
+    display: block;
+}
+.team-member .member-bio {
+    font-size: 0.9rem;
+    color: var(--slate-80);
+    line-height: 1.55;
+}
+@media (max-width: 880px) {
+    .team-grid { grid-template-columns: 1fr; }
+    .team-member { border-right: 0; }
+}
+
+/* CONTACT */
+.contact {
+    border-bottom: 1px solid var(--hairline);
+    padding: 7rem 0;
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+.contact h2 { font-size: 2.4rem; line-height: 1.15; margin-bottom: 1.4rem; }
+.contact p {
+    font-size: 1.05rem;
+    color: var(--slate-80);
+    margin-bottom: 1.4rem;
+    max-width: 480px;
+}
+.contact .email-box {
+    border: 1px solid var(--hairline);
+    padding: 1.8rem 1.6rem;
+    background: var(--stone);
+}
+.contact .email-box .label {
+    font-family: var(--font-label);
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.7rem;
+    color: var(--slate-40);
+    margin-bottom: 0.5rem;
+}
+.contact .email-box a {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-color: var(--copper);
+    text-underline-offset: 5px;
+    text-decoration-thickness: 1px;
+    word-break: break-all;
+}
+.contact .email-box a:hover { color: var(--copper); }
+.contact .email-box .meta {
+    margin-top: 1.2rem;
+    font-family: var(--font-editorial);
+    font-style: italic;
+    color: var(--slate-60);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+@media (max-width: 880px) { .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
+
+/* FOOTER */
+.footer {
+    background: var(--ink);
+    color: rgba(242, 238, 234, 0.7);
+    padding: 4rem 0 2rem 0;
+}
+.footer-top {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr;
+    gap: 3rem;
+    padding-bottom: 2.4rem;
+    border-bottom: 1px solid rgba(194, 133, 106, 0.2);
+    margin-bottom: 1.8rem;
+}
+.footer-brand .footer-wordmark {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--stone);
+    margin-bottom: 0.8rem;
+    letter-spacing: -0.005em;
+}
+.footer-brand .footer-wordmark em { font-family: var(--font-editorial); font-style: italic; color: var(--copper); }
+.footer-brand p {
+    color: rgba(242, 238, 234, 0.65);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    max-width: 420px;
+}
+.footer-col h5 {
+    font-family: var(--font-label);
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.7rem;
+    color: var(--copper);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+.footer-col p, .footer-col a {
+    display: block;
+    color: rgba(242, 238, 234, 0.7);
+    font-size: 0.88rem;
+    text-decoration: none;
+    margin-bottom: 0.45rem;
+    line-height: 1.5;
+}
+.footer-col a:hover { color: var(--copper); }
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.78rem;
+    color: rgba(242, 238, 234, 0.5);
+    font-family: var(--font-editorial);
+    font-style: italic;
+}
+.footer-bottom .legalese {
+    color: rgba(242, 238, 234, 0.55);
+    max-width: 720px;
+    font-size: 0.78rem;
+    line-height: 1.55;
+    font-style: italic;
+    flex: 1 1 100%;
+    margin-bottom: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid rgba(194, 133, 106, 0.15);
+}
+.footer-bottom strong { color: rgba(242, 238, 234, 0.7); }
+@media (max-width: 880px) {
+    .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar">
+    <div class="container nav-container">
+        <a href="#" class="nav-logo">
+            <div class="nav-mark"><span>W</span></div>
+            <div class="nav-wordmark">
+                WSM
+                <span class="nav-sub">Western Strategic Minerals</span>
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#capabilities">Capabilities</a>
+            <a href="#platform">Platform</a>
+            <a href="#minerals">Minerals</a>
+            <a href="#team">Team</a>
+        </div>
+        <a href="#contact" class="nav-cta">Get in Touch</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-grid">
+            <div>
+                <span class="section-label">I &middot; Baltic Critical Minerals</span>
+                <h1>Acquiring and restarting <em>underexploited</em> mines across the Baltic.</h1>
+                <p class="lead">A Swedish junior mining company consolidating dormant and underperforming critical-mineral operations across Sweden, Poland and Finland.</p>
+                <p class="body">Western Strategic Minerals AB identifies, acquires and restarts mines and permitted deposits that have been mothballed, mismanaged or abandoned by owners who lacked the capital, regulatory positioning or operational capability to realise their geological value. We apply modern management, CRMA-aligned permitting strategy and systematic portfolio construction to unlock long-term value from known mineralisation.</p>
+                <a href="#capabilities" class="hero-cta">Our Approach</a>
+                <a href="#contact" class="hero-cta">Contact</a>
+            </div>
+            <div class="hero-mark">
+                <svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="copper-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#c2856a;stop-opacity:0.15"/>
+                            <stop offset="100%" style="stop-color:#c2856a;stop-opacity:0.04"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="160" cy="145" r="120" fill="url(#copper-grad)" stroke="#c2856a" stroke-width="0.5" opacity="0.6"/>
+                    <g fill="none" stroke-linejoin="miter" stroke-linecap="square">
+                        <polygon points="100,60 195,200 15,200" stroke="#1a2332" stroke-width="2"/>
+                        <polygon points="175,100 240,200 120,200" stroke="#1a2332" stroke-width="2"/>
+                        <polygon points="225,130 280,200 178,200" stroke="#1a2332" stroke-width="1.5" opacity="0.5"/>
+                        <line x1="10" y1="200" x2="290" y2="200" stroke="#1a2332" stroke-width="2"/>
+                    </g>
+                    <circle cx="100" cy="115" r="3" fill="#c2856a" opacity="0.7"/>
+                    <circle cx="185" cy="148" r="2.5" fill="#c2856a" opacity="0.5"/>
+                    <circle cx="140" cy="170" r="2" fill="#c2856a" opacity="0.4"/>
+                    <line x1="80" y1="240" x2="240" y2="240" stroke="#c2856a" stroke-width="0.8"/>
+                    <text x="160" y="268" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#1a2332" text-anchor="middle" letter-spacing="6" font-weight="700">WESTERN STRATEGIC</text>
+                    <text x="160" y="286" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#6b7a8d" text-anchor="middle" letter-spacing="6">MINERALS</text>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHO WE ARE -->
+<section class="who" id="about">
+    <div class="container">
+        <div class="who-grid">
+            <div>
+                <span class="section-label">II &middot; Who We Are</span>
+                <hr class="rule">
+                <h2>A Baltic roll-up platform for <em>critical mineral</em> assets.</h2>
+            </div>
+            <div>
+                <p>Western Strategic Minerals AB is a Swedish company built on a straightforward thesis: the Baltic region holds significant critical-mineral resources in mines and permit areas that are dormant, underperforming or controlled by owners who lack the capital, regulatory positioning or technical capability to develop them.</p>
+                <p>We acquire these assets at valuations that reflect their current neglected state, not their geological potential. We then apply <strong>operational overhaul</strong>, <strong>modern management</strong> and <strong>CRMA-aligned permitting</strong> to restart production and unlock value that previous owners could not.</p>
+                <div class="who-pull">
+                    Systematic consolidation of overlooked geology across three Baltic jurisdictions, with near-term mine restarts and long-term permit-portfolio value creation.
+                </div>
+                <p>Our operating geography spans <strong>Sweden</strong> (Bergslagen, V&auml;sterbotten, Norrbotten), <strong>Poland</strong> and <strong>Finland</strong> &mdash; three jurisdictions with established mining law, EU regulatory alignment and proven critical-mineral endowments that remain structurally underexploited.</p>
+                <p>WSM is not an exploration-stage speculator. Every acquisition target has existing geological data, historical production records or confirmed mineralisation. We buy known geology at distressed prices, install competent management and restart operations.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHAT WE DO -->
+<section class="what" id="capabilities">
+    <div class="container">
+        <span class="section-label">III &middot; Capabilities</span>
+        <h2>Three pillars, <em>one platform</em>.</h2>
+        <hr class="rule">
+        <p class="sub">Systematic permit acquisition for long-term portfolio value, mine restarts for near-term cash flow, and tailings valorisation to extract additional value from legacy assets.</p>
+        <div class="tracks">
+            <div class="track">
+                <div class="track-num">i.</div>
+                <span class="track-tag">Permit Factory</span>
+                <h3>Systematic permit acquisition</h3>
+                <p>Filing and acquiring exploration permits across established Baltic mining districts, targeting nickel, cobalt, tungsten, molybdenum, vanadium, titanium and PGMs. Every permit filed against verified geological data with confirmed mineralisation indicators. Long-term value creation through portfolio construction and CRMA Strategic Project designation.</p>
+            </div>
+            <div class="track">
+                <div class="track-num">ii.</div>
+                <span class="track-tag">Mine Restarts</span>
+                <h3>Operational overhaul and restart</h3>
+                <p>Acquiring mothballed and underperforming mine operations, installing modern management and restarting production. Short-to-medium-term revenue generation from mines with known reserves, existing infrastructure and clear paths to operational improvement. Management overhaul is the value lever &mdash; not greenfield discovery.</p>
+            </div>
+            <div class="track">
+                <div class="track-num">iii.</div>
+                <span class="track-tag">Tailings Valorisation</span>
+                <h3>Value from legacy waste</h3>
+                <p>Acquiring rights to historical tailings deposits with recoverable critical-mineral content. Modern processing economics and updated commodity prices make previously uneconomic tailings repositories commercially viable. Near-term revenue from material that has already been mined, crushed and concentrated.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PLATFORM -->
+<section class="platform" id="platform">
+    <div class="container">
+        <span class="section-label">IV &middot; Proprietary Intelligence</span>
+        <hr class="rule">
+        <h2>Data-driven <em>permit acquisition</em>.</h2>
+        <p class="sub">WSM operates a proprietary geological intelligence platform built on live SGU data, satellite imagery and environmental overlays to systematically identify and evaluate acquisition targets.</p>
+        <div class="platform-grid">
+            <div>
+                <ul class="platform-features">
+                    <li>
+                        <span class="feat-num">01</span>
+                        <div class="feat-text"><strong>Live permit monitoring</strong> &mdash; real-time tracking of granted, applied, expired and prohibition-period permits across all Swedish mining districts via SGU OGC API integration.</div>
+                    </li>
+                    <li>
+                        <span class="feat-num">02</span>
+                        <div class="feat-text"><strong>Multi-commodity targeting</strong> &mdash; filtering by Ni, Co, W, Mo, V, Ti, PGM and other critical minerals across bedrock geology, borehole data and historical production records.</div>
+                    </li>
+                    <li>
+                        <span class="feat-num">03</span>
+                        <div class="feat-text"><strong>Environmental &amp; infrastructure overlay</strong> &mdash; protected areas, reindeer herding zones, Sami consultation requirements and transport infrastructure mapped against every permit area.</div>
+                    </li>
+                    <li>
+                        <span class="feat-num">04</span>
+                        <div class="feat-text"><strong>Satellite imagery integration</strong> &mdash; Sentinel-2 imagery with cloud filtering for ground-truth verification of site conditions, access roads and active disturbance.</div>
+                    </li>
+                    <li>
+                        <span class="feat-num">05</span>
+                        <div class="feat-text"><strong>AI-assisted viability analysis</strong> &mdash; automated economic viability scoring integrating commodity prices, logistics costs, permitting complexity and geological confidence.</div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <!-- Replace this div with <div class="platform-screenshot"><img src="platform-screenshot.png" alt="WSM Intelligence Platform"></div> when you have the actual screenshot -->
+                <div class="platform-mock">
+                    <div class="mock-bar">
+                        <div class="mock-dot"></div>
+                        <div class="mock-dot"></div>
+                        <div class="mock-dot"></div>
+                    </div>
+                    <div class="mock-body">
+                        <div class="mock-map">
+                            <svg viewBox="0 0 400 340" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                                <path d="M180,20 C185,25 195,30 200,45 C205,55 210,70 215,80 C220,85 225,90 228,100 C232,110 230,120 225,135 C222,145 218,155 220,165 C222,175 225,185 222,195 C218,210 215,220 210,230 C205,240 200,250 195,260 C190,265 185,270 180,275 C175,280 168,285 162,288 C155,290 148,292 142,290 C135,288 130,282 128,275 C125,268 124,260 122,252 C120,245 118,238 115,232 C112,225 108,220 105,215 C102,210 100,205 98,198 C96,190 95,182 96,175 C97,168 100,162 102,155 C105,148 108,140 110,132 C112,125 114,118 115,110 C116,102 118,95 120,88 C122,80 125,72 130,65 C135,58 140,52 148,45 C155,38 162,32 170,26 C175,22 178,20 180,20Z" fill="none" stroke="rgba(194,133,106,0.25)" stroke-width="1"/>
+                                <path d="M240,50 C245,60 248,75 250,90 C252,105 253,120 255,135 C256,150 258,165 256,180 C254,195 250,210 248,225 C246,235 242,242 238,248 C234,252 228,255 222,252 C218,248 215,242 212,235 C210,228 208,220 206,212" fill="none" stroke="rgba(194,133,106,0.2)" stroke-width="1"/>
+                                <circle cx="140" cy="180" r="3" fill="#4ade80" opacity="0.8"/>
+                                <circle cx="155" cy="165" r="2.5" fill="#4ade80" opacity="0.7"/>
+                                <circle cx="148" cy="195" r="2" fill="#4ade80" opacity="0.6"/>
+                                <circle cx="130" cy="210" r="3.5" fill="#4ade80" opacity="0.7"/>
+                                <circle cx="160" cy="230" r="2.5" fill="#4ade80" opacity="0.8"/>
+                                <circle cx="175" cy="245" r="3" fill="#4ade80" opacity="0.6"/>
+                                <circle cx="142" cy="240" r="2" fill="#4ade80" opacity="0.7"/>
+                                <circle cx="165" cy="200" r="2.8" fill="#4ade80" opacity="0.65"/>
+                                <circle cx="125" cy="170" r="2" fill="#4ade80" opacity="0.7"/>
+                                <circle cx="138" cy="152" r="2.5" fill="#4ade80" opacity="0.6"/>
+                                <circle cx="150" cy="175" r="2" fill="#f87171" opacity="0.7"/>
+                                <circle cx="135" cy="225" r="2.5" fill="#f87171" opacity="0.6"/>
+                                <circle cx="168" cy="215" r="2" fill="#f87171" opacity="0.5"/>
+                                <circle cx="155" cy="250" r="1.8" fill="#f87171" opacity="0.6"/>
+                                <circle cx="145" cy="160" r="3" fill="#fbbf24" opacity="0.8"/>
+                                <circle cx="162" cy="185" r="2.5" fill="#fbbf24" opacity="0.7"/>
+                                <circle cx="128" cy="198" r="2" fill="#fbbf24" opacity="0.6"/>
+                                <circle cx="170" cy="140" r="3.5" fill="#a78bfa" opacity="0.6"/>
+                                <circle cx="152" cy="145" r="2.8" fill="#a78bfa" opacity="0.5"/>
+                                <circle cx="145" cy="160" r="12" fill="none" stroke="#fbbf24" stroke-width="1.5" opacity="0.6" stroke-dasharray="3,2"/>
+                                <circle cx="25" cy="310" r="4" fill="#4ade80" opacity="0.8"/>
+                                <text x="35" y="313" font-family="Inter,sans-serif" font-size="7" fill="rgba(242,238,234,0.5)">Granted</text>
+                                <circle cx="85" cy="310" r="4" fill="#fbbf24" opacity="0.8"/>
+                                <text x="95" y="313" font-family="Inter,sans-serif" font-size="7" fill="rgba(242,238,234,0.5)">Applied</text>
+                                <circle cx="145" cy="310" r="4" fill="#f87171" opacity="0.8"/>
+                                <text x="155" y="313" font-family="Inter,sans-serif" font-size="7" fill="rgba(242,238,234,0.5)">Expired</text>
+                                <circle cx="205" cy="310" r="4" fill="#a78bfa" opacity="0.8"/>
+                                <text x="215" y="313" font-family="Inter,sans-serif" font-size="7" fill="rgba(242,238,234,0.5)">Concess.</text>
+                            </svg>
+                        </div>
+                        <div class="mock-panel">
+                            <div class="mock-panel-title">Permit Detail</div>
+                            <div style="margin-bottom:8px;">
+                                <span class="mock-tag green">Applied</span>
+                                <span class="mock-tag orange">Priority</span>
+                            </div>
+                            <div class="mock-panel-row"><span class="label">Area</span><span class="value">36,679 ha</span></div>
+                            <div class="mock-panel-row"><span class="label">County</span><span class="value">Norrbottens l&auml;n</span></div>
+                            <div class="mock-panel-row"><span class="label">Applied</span><span class="value">2026-03-18</span></div>
+                            <div class="mock-panel-row"><span class="label">Type</span><span class="value" style="font-size:0.48rem">Unders&ouml;kningstillst&aring;nd</span></div>
+                            <div style="margin-top:10px; padding-top:8px; border-top: 1px solid rgba(194,133,106,0.15);">
+                                <div class="mock-panel-title" style="font-size:0.55rem; margin-bottom:4px;">Commodities</div>
+                                <span class="mock-tag red" style="font-size:0.45rem">Ni</span>
+                                <span class="mock-tag green" style="font-size:0.45rem">Co</span>
+                                <span class="mock-tag orange" style="font-size:0.45rem">W</span>
+                                <span class="mock-tag red" style="font-size:0.45rem">Mo</span>
+                            </div>
+                            <div style="margin-top:10px; padding-top:8px; border-top: 1px solid rgba(194,133,106,0.15);">
+                                <div class="mock-panel-title" style="font-size:0.55rem; margin-bottom:4px;">Satellite Imagery</div>
+                                <div class="mock-panel-row"><span class="label">2026-05-16</span><span class="value">12% cloud</span></div>
+                                <div class="mock-panel-row"><span class="label">2026-05-13</span><span class="value">5% cloud</span></div>
+                            </div>
+                            <div style="margin-top:12px; background: var(--copper); color: var(--ink); text-align:center; padding: 5px 8px; font-size: 0.52rem; font-family: var(--font-body); font-weight: 600; border-radius: 3px; letter-spacing: 0.02em;">
+                                Analyze Economic Viability (AI)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="platform-caption">WSM proprietary intelligence platform &mdash; live SGU data, satellite imagery and AI-assisted viability analysis</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TARGET MINERALS -->
+<section class="portfolio" id="minerals">
+    <div class="container">
+        <span class="section-label">V &middot; Target Minerals</span>
+        <hr class="rule">
+        <div class="heading-row">
+            <h2>The <em>commodity focus</em>.</h2>
+            <div class="heading-aside">High-value minor metals, battery metals and platinum group metals. Seven target commodities across the CRMA critical and strategic raw materials lists.</div>
+        </div>
+        <div class="mineral-grid">
+            <div class="mineral">
+                <div class="symbol">Ni</div>
+                <div class="name">Nickel</div>
+                <span class="category battery">Battery Metal</span>
+                <div class="desc">Essential cathode material for lithium-ion batteries. EU strategic raw material. Significant untapped deposits across the Fennoscandian Shield.</div>
+            </div>
+            <div class="mineral">
+                <div class="symbol">Co</div>
+                <div class="name">Cobalt</div>
+                <span class="category battery">Battery Metal</span>
+                <div class="desc">Critical battery and superalloy input. CRMA-listed strategic raw material. Often co-located with nickel in Baltic sulphide deposits.</div>
+            </div>
+            <div class="mineral">
+                <div class="symbol">V</div>
+                <div class="name">Vanadium</div>
+                <span class="category critical">Critical Metal</span>
+                <div class="desc">High-strength steel alloy and vanadium redox flow battery metal. CRMA-listed. Found in titaniferous magnetite deposits across Norrbotten.</div>
+            </div>
+            <div class="mineral">
+                <div class="symbol">Ti</div>
+                <div class="name">Titanium</div>
+                <span class="category critical">Critical Metal</span>
+                <div class="desc">Aerospace, medical and defence-critical metal. CRMA strategic raw material. Co-occurs with vanadium in Fennoscandian magnetite bodies.</div>
+            </div>
+        </div>
+        <div class="mineral-grid row-2">
+            <div class="mineral">
+                <div class="symbol">Mo</div>
+                <div class="name">Molybdenum</div>
+                <span class="category minor">Minor Metal</span>
+                <div class="desc">Superalloy and catalyst metal. High-temperature industrial applications. Often present alongside tungsten in Swedish skarn and greisen deposits.</div>
+            </div>
+            <div class="mineral">
+                <div class="symbol">W</div>
+                <div class="name">Tungsten</div>
+                <span class="category minor">Minor Metal</span>
+                <div class="desc">Highest supply-chain-risk rating on the USGS 2025 list. Hardmetals, defence, tooling. Historical Swedish production in Bergslagen and northern districts.</div>
+            </div>
+            <div class="mineral">
+                <div class="symbol"><em>PGM</em></div>
+                <div class="name">Platinum Group</div>
+                <span class="category pgm">PGM</span>
+                <div class="desc">Platinum, palladium, rhodium. Catalysts, hydrogen fuel cells, electronics. Layered mafic intrusions across the Fennoscandian Shield host PGE mineralisation.</div>
+            </div>
+            <div class="mineral" style="background: rgba(194,133,106,0.04);">
+                <div class="symbol" style="color: var(--copper); font-size: 1.6rem; margin-bottom: 0.5rem;">+</div>
+                <div class="name">Opportunistic</div>
+                <span class="category critical">Selective</span>
+                <div class="desc">Selective exposure to additional CRMA-listed commodities where co-mineralisation is confirmed: REE, Cu, Zn, Au, Se, Te. Portfolio construction, not commodity speculation.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ASSET REGIONS -->
+<section class="regions">
+    <div class="container">
+        <span class="section-label">VI &middot; Operating Geography</span>
+        <hr class="rule">
+        <h2>Four regions, <em>three jurisdictions</em>.</h2>
+        <p class="lead-sub">Established mining districts with confirmed critical-mineral endowments, EU regulatory alignment and existing infrastructure.</p>
+        <ul class="region-list">
+            <li class="region-item">
+                <div class="region-code">SE&middot;Be</div>
+                <div>
+                    <h4>Bergslagen, Sweden</h4>
+                    <p>Central Sweden&rsquo;s historical mining heartland. Polymetallic sulphide and skarn deposits with tungsten, molybdenum and base-metal mineralisation. Legacy tailings with recoverable critical-mineral content. Proximity to southern Swedish infrastructure and processing capacity.</p>
+                    <div class="commodity-tags">
+                        <span>W</span><span>Mo</span><span>Cu</span><span>Zn</span><span>Tailings</span>
+                    </div>
+                </div>
+            </li>
+            <li class="region-item">
+                <div class="region-code">SE&middot;Vb</div>
+                <div>
+                    <h4>V&auml;sterbotten, Sweden</h4>
+                    <p>Skellefte&aring; district and the V&auml;sterbotten polymetallic belt. Nickel-cobalt sulphide deposits, PGE-bearing mafic intrusions and base-metal VMS systems. Active mining culture with skilled labour and established logistics.</p>
+                    <div class="commodity-tags">
+                        <span>Ni</span><span>Co</span><span>PGM</span><span>Cu</span><span>Zn</span>
+                    </div>
+                </div>
+            </li>
+            <li class="region-item">
+                <div class="region-code">SE&middot;Nb</div>
+                <div>
+                    <h4>Norrbotten, Sweden</h4>
+                    <p>Europe&rsquo;s northernmost mining region. Titaniferous magnetite bodies with vanadium and titanium, layered intrusions hosting PGE potential. CRMA Strategic Project potential for multiple commodity classes. Established rail and port infrastructure via Lule&aring;.</p>
+                    <div class="commodity-tags">
+                        <span>V</span><span>Ti</span><span>PGM</span><span>REE</span><span>Fe</span>
+                    </div>
+                </div>
+            </li>
+            <li class="region-item">
+                <div class="region-code">PL&middot;FI</div>
+                <div>
+                    <h4>Poland &amp; Finland</h4>
+                    <p>Identified acquisition targets with historical production records, established mining law and EU regulatory alignment. Active pipeline evaluation for nickel-cobalt, tungsten and PGE-bearing assets. Geographic diversification and regulatory risk mitigation.</p>
+                    <div class="commodity-tags">
+                        <span>Ni</span><span>Co</span><span>W</span><span>PGM</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- DIFFERENTIATORS -->
+<section class="differentiators">
+    <div class="container">
+        <span class="section-label">VII &middot; What separates us</span>
+        <hr class="rule">
+        <h2>Consolidation thesis, <em>operational restart</em>, CRMA positioning.</h2>
+        <p class="lead-sub">Five things that materially distinguish WSM from a conventional junior explorer.</p>
+        <ol class="diff-list">
+            <li>
+                <div>
+                    <h4>Roll-up model, not single-asset risk</h4>
+                    <p>WSM acquires a diversified portfolio of undervalued mineral assets across multiple jurisdictions and commodity classes. Portfolio construction de-risks the thesis: no single permit, mine or jurisdiction determines the outcome.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h4>Mine restarts over greenfield exploration</h4>
+                    <p>Every acquisition target has confirmed mineralisation through historical production, geological survey data or prior exploration campaigns. We restart known deposits with management overhaul and operational improvement &mdash; not speculative drilling programmes.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h4>EU Critical Raw Materials Act alignment</h4>
+                    <p>Operating exclusively within EU member states positions every asset for CRMA Strategic Project designation, unlocking accelerated permitting timelines, co-financing eligibility and priority regulatory treatment. Multiple applications filed or in preparation.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h4>Proprietary geological intelligence platform</h4>
+                    <p>WSM&rsquo;s proprietary data platform integrates live SGU permit data, satellite imagery, environmental overlays and AI-assisted economic viability analysis. Systematic identification and evaluation of acquisition targets at a pace and precision that manual prospecting cannot match.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h4>Three-jurisdiction Baltic footprint</h4>
+                    <p>Sweden, Poland and Finland offer established mining law, EU regulatory alignment, skilled labour markets and infrastructure. Geographic diversification across three Baltic jurisdictions provides regulatory and political risk mitigation unavailable to single-country operators.</p>
+                </div>
+            </li>
+        </ol>
+    </div>
+</section>
+
+<!-- CRMA CONTEXT -->
+<section class="context">
+    <div class="container">
+        <span class="section-label">VIII &middot; Regulatory Context</span>
+        <hr class="rule">
+        <h2>Positioned inside the <em>EU CRMA framework</em>.</h2>
+        <p>The <strong>EU Critical Raw Materials Act</strong> (Regulation 2024/1252) establishes binding targets for domestic extraction, processing and recycling of critical and strategic raw materials within the European Union.</p>
+        <p>The Act creates a <strong>Strategic Projects</strong> designation that grants accelerated permitting (24 months for extraction, 12 months for processing), streamlined environmental assessment and access to EU and member-state co-financing instruments.</p>
+        <p>WSM operates exclusively in EU member states and targets commodities on the CRMA critical and strategic raw materials lists. This structural positioning means every asset in the WSM portfolio is eligible for Strategic Project designation, accelerated permitting and co-financing support that competitors outside the EU cannot access.</p>
+    </div>
+</section>
+
+<!-- TEAM -->
+<section class="team" id="team">
+    <div class="container">
+        <span class="section-label">IX &middot; Leadership</span>
+        <hr class="rule">
+        <h2>The <em>team</em>.</h2>
+        <p class="lead-sub">Operational leadership combining mining, finance and regulatory expertise across Nordic and Baltic jurisdictions.</p>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-initials">&mdash;</div>
+                <div class="member-name">To be confirmed</div>
+                <span class="member-title">Position</span>
+                <p class="member-bio">Team details to be added.</p>
+            </div>
+            <div class="team-member">
+                <div class="member-initials">&mdash;</div>
+                <div class="member-name">To be confirmed</div>
+                <span class="member-title">Position</span>
+                <p class="member-bio">Team details to be added.</p>
+            </div>
+            <div class="team-member">
+                <div class="member-initials">&mdash;</div>
+                <div class="member-name">To be confirmed</div>
+                <span class="member-title">Position</span>
+                <p class="member-bio">Team details to be added.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact-grid">
+            <div>
+                <span class="section-label">X &middot; Contact</span>
+                <hr class="rule">
+                <h2>For investment and partnership inquiries.</h2>
+                <p>If you are an investor evaluating the Baltic critical-minerals opportunity, a mine owner with assets to discuss, or an operator considering a management partnership, we welcome your enquiry.</p>
+            </div>
+            <div>
+                <div class="email-box">
+                    <div class="label">General Enquiries</div>
+                    <a href="mailto:info@westernstrategicminerals.com">info@westernstrategicminerals.com</a>
+                    <div class="meta">Sweden<br>Western Strategic Minerals AB</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="footer-wordmark">Western Strategic <em>Minerals</em></div>
+                <p>A Swedish junior mining company acquiring, consolidating and restarting underexploited critical-mineral operations across the Baltic region.</p>
+            </div>
+            <div class="footer-col">
+                <h5>Site</h5>
+                <a href="#about">About</a>
+                <a href="#capabilities">Capabilities</a>
+                <a href="#platform">Platform</a>
+                <a href="#minerals">Minerals</a>
+                <a href="#team">Team</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h5>Contact</h5>
+                <a href="mailto:info@westernstrategicminerals.com">info@westernstrategicminerals.com</a>
+                <p>Sweden</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="legalese">
+                WSM is the operating brand of <strong>Western Strategic Minerals AB</strong>, a Swedish aktiebolag. References to WSM on this site refer to Western Strategic Minerals AB. This website does not constitute an offer to sell or a solicitation of an offer to buy any securities. All investment involves risk; past performance of assets or comparable operations is not indicative of future results.
+            </div>
+            <div>&copy; 2026 Western Strategic Minerals AB, all rights reserved.</div>
+            <div>Sweden</div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
