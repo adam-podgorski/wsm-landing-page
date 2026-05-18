@@ -1,2 +1,0 @@
-# Redirect www to apex
-https://www.westernstrategicminerals.com/* https://westernstrategicminerals.com/:splat 301
