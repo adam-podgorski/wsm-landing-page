@@ -95,6 +95,18 @@ a { color: inherit; text-decoration: none; }
     transition: color 0.25s;
 }
 .nav-links a:hover { color: var(--white); }
+.nav-links a.nav-cta {
+    padding: 0.45rem 1.1rem;
+    border: 1px solid var(--accent, #c2856a);
+    border-radius: 4px;
+    color: var(--accent, #c2856a);
+    font-weight: 600;
+    transition: all 0.25s;
+}
+.nav-links a.nav-cta:hover {
+    background: var(--accent, #c2856a);
+    color: #0a0a0a;
+}
 @media (max-width: 768px) {
     .nav-links a:not(:last-child) { display: none; }
 }
@@ -356,6 +368,7 @@ a { color: inherit; text-decoration: none; }
             <a href="#strategies">Strategies</a>
             <a href="#geography">Geography</a>
             <a href="#contact">Contact</a>
+            <a href="https://platform.westernstrategicminerals.com" class="nav-cta" target="_blank" rel="noopener" title="Investor &amp; partner access — sign-in required">Platform &#8599;</a>
         </div>
     </div>
 </nav>
